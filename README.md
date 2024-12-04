@@ -16,9 +16,9 @@ This is a simple task management application that allows users to create, view, 
 
 ### Requirements
 
-- PHP >= 8.0
+- PHP 8.x
 - Composer
-- Laravel 10.x
+- Laravel 11.x
 - MySQL or any other supported database
 
 ### Steps
@@ -122,7 +122,7 @@ database/factories/UserFactory.php
 
 ## Technologies Used
 
-- **Laravel 10.x** - PHP Framework
+- **Laravel 11.x** - PHP Framework
 - **MySQL** - Database Management
 - **Blade** - Templating Engine for views
 
