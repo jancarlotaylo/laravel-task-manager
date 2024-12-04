@@ -42,7 +42,7 @@ class TaskController extends Controller
         }
 
         // Apply filter by status if 'status' parameter exists
-        if ($request->has('status') && $request->get('status') !== '') {
+        if ($request->has('status') && $request->get('status') !== '' && $request->get('status') !== null) {
             $status = $request->get('status');
             $query->where('status', $status);
         }

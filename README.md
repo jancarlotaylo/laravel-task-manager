@@ -25,8 +25,9 @@ This is a simple task management application that allows users to create, view, 
 
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/jancarlotaylo/laravel-task-manager.git
-cd laravel-task-manager
+git clone https://github.com/jancarlotaylo/laravel-task-manager.git <<OF_YOUR_CHOICE>>
+cd <<OF_YOUR_CHOICE>>
+git checkout main
 ```
 
 2. Install the project dependencies using Composer:
@@ -47,11 +48,11 @@ php artisan key:generate
 5. Set up your database configuration in the `.env` file:
 ```
 DB_CONNECTION=mysql
-DB_HOST=localhost
+DB_HOST=<<OF_YOUR_CHOICE>>
 DB_PORT=3306
-DB_DATABASE=laravel_task_manager
-DB_USERNAME=root
-DB_PASSWORD=
+DB_DATABASE=<<OF_YOUR_CHOICE>>
+DB_USERNAME=<<OF_YOUR_CHOICE>>
+DB_PASSWORD=<<OF_YOUR_CHOICE>>
 ```
 
 6. Modify permissions (Use `sudo` if the command fails due to permissions)
