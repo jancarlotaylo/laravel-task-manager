@@ -24,11 +24,14 @@ This is a simple task management application that allows users to create, view, 
 ### Steps
 
 1. Clone the repository to your local machine:
-   ```bashgit clone https://github.com/yourusername/task-management.git
-   cd task-management```
+```bash
+git clone https://github.com/yourusername/task-management.git
+cd task-management```
 
 2. Install the project dependencies using Composer:
-   `composer install`
+```bash
+composer install
+```
 
 3. Copy the example environment file to `.env`:
    `cp .env.example .env`
