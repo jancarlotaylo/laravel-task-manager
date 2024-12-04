@@ -25,8 +25,8 @@ This is a simple task management application that allows users to create, view, 
 
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/jancarlotaylo/laravel-task-manager
-cd task-management
+git clone https://github.com/jancarlotaylo/laravel-task-manager.git
+cd laravel-task-manager
 ```
 
 2. Install the project dependencies using Composer:
@@ -47,29 +47,48 @@ php artisan key:generate
 5. Set up your database configuration in the `.env` file:
 ```
 DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
+DB_HOST=localhost
 DB_PORT=3306
-DB_DATABASE=task_management
+DB_DATABASE=laravel_task_manager
 DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-6. Run the migrations to set up the database:
+6. Modify permissions (Use `sudo` if the command fails due to permissions)
+```bash
+chmod 775 -R storage/
+```
+
+7. Run the migrations to set up the database:
 ```bash
 php artisan migrate
 ```
 
-7. Seed the database with sample data:
+8. Seed the database with sample data:
 ```bash
 php artisan db:seed
 ```
 
-8. Serve the application:
+9. Serve the application:
 ```bash
-npm run dev
+php artisan serve
 ```
 
-   You can now access the application at `http://webapp.task.test`.
+10. Install and run npm (On a separate terminal)
+```bash
+npm install && npm run dev
+```
+
+You can now access the application at `http://127.0.0.1:8000`.
+
+#### Note:
+
+Test credentials can be found in the following files:
+
+```
+database/seeders/DatabaseSeeder.php
+database/factories/UserFactory.php
+```
 
 ## Usage
 
@@ -99,13 +118,11 @@ npm run dev
 - **GET** `/tasks/{task}` – View a specific task.
 - **GET** `/tasks/{task}/edit` – Show form to edit a task.
 - **PUT** `/tasks/{task}` – Update an existing task.
-- **DELETE** `/tasks/{task}` – Delete a task.
 
 ## Technologies Used
 
 - **Laravel 10.x** - PHP Framework
 - **MySQL** - Database Management
-- **Bootstrap 5** - Frontend Framework for responsive UI
 - **Blade** - Templating Engine for views
 
 ## Contributing
