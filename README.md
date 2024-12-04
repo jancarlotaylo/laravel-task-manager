@@ -25,8 +25,9 @@ This is a simple task management application that allows users to create, view, 
 
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/task-management.git
-cd task-management```
+git clone https://github.com/jancarlotaylo/laravel-task-manager
+cd task-management
+```
 
 2. Install the project dependencies using Composer:
 ```bash
@@ -34,31 +35,41 @@ composer install
 ```
 
 3. Copy the example environment file to `.env`:
-   `cp .env.example .env`
+```bash
+cp .env.example .env
+```
 
 4. Generate the application key:
-   `php artisan key:generate`
+```bash
+php artisan key:generate
+```
 
 5. Set up your database configuration in the `.env` file:
-   ```
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=task_management
-   DB_USERNAME=root
-   DB_PASSWORD=
-   ```
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=task_management
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
 6. Run the migrations to set up the database:
-   `php artisan migrate`
+```bash
+php artisan migrate
+```
 
-7. (Optional) Seed the database with sample data:
-   `php artisan db:seed`
+7. Seed the database with sample data:
+```bash
+php artisan db:seed
+```
 
 8. Serve the application:
-   `php artisan serve`
+```bash
+npm run dev
+```
 
-   You can now access the application at `http://localhost:8000`.
+   You can now access the application at `http://webapp.task.test`.
 
 ## Usage
 
