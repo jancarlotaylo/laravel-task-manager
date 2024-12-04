@@ -24,8 +24,8 @@ This is a simple task management application that allows users to create, view, 
 ### Steps
 
 1. Clone the repository to your local machine:
-   `git clone https://github.com/yourusername/task-management.git`
-   `cd task-management`
+   ```bashgit clone https://github.com/yourusername/task-management.git
+   cd task-management```
 
 2. Install the project dependencies using Composer:
    `composer install`
